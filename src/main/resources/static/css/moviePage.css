@@ -1,0 +1,21 @@
+img {
+    position: relative;
+    height: 200px;
+    width: 560px;
+    margin-left: 28%;
+    border-radius: 18px;
+}
+body{
+    /* background-color:rgb(31, 29, 29) ; */
+    background-color:rgb(12, 12, 12) ;
+     font-family: Arial, sans-serif;
+		            margin: 0;
+		            padding: 0;
+
+}
+
+/* body {
+    background-image: linear-gradient(rgb(31, 29, 29), rgb(12, 12, 12));
+    background-size: cover;
+} */
+

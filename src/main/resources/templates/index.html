@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .checked {
+            color: rgb(245, 51, 51);
+            padding-top: 323px;
+            margin-left: 25px;
+            position: absolute;
+            z-index: +1;
+            font-size: 20px;
+			}
+			
+			
+			* {box-sizing: border-box;}
+					body {font-family: Verdana, sans-serif;}
+					.mySlides {display: none;}
+					.img1 {		width: 106%; /* Apply a common width */
+					  height: 100%; /* Maintain aspect ratio */
+					  display: block; /* Center the images within their containers */
+					  margin: auto; /* Useful for centering if the width is less than 100% */}
+					
+					.img2 {	  width: 106%; /* Apply a common width */
+						height: 200%; /* Maintain aspect ratio */
+					    display: block; /* Center the images within their containers */
+					    margin: auto; /* Useful for centering if the width is less than 100% */}
+					
+					.img3 {	width: 106%; /* Apply a common width */
+						  height: 200%; /* Maintain aspect ratio */
+						  display: block; /* Center the images within their containers */
+						  margin: auto; /* Useful for centering if the width is less than 100% */}
+					
+					.img4 {	width: 106%; /* Apply a common width */
+						   height: 200%; /* Maintain aspect ratio */
+						    display: block; /* Center the images within their containers */
+						    margin: auto; /* Useful for centering if the width is less than 100% */}
+					
+					/* Slideshow container */
+					.slideshow-container {
+					  max-width: 1000px;
+					  position: relative;
+					  margin:0%;
+					}
+					
+					/* Caption text */
+					.text {
+					  color: #f2f2f2;
+					  font-size: 15px;
+					  padding: 8px 12px;
+					  position: absolute;
+					  bottom: 8px;
+					  width: 100%;
+					  text-align: center;
+					}
+					
+					/* Number text (1/3 etc) */
+					.numbertext {
+					  color: #f2f2f2;
+					  font-size: 12px;
+					  padding: 8px 12px;
+					  position: absolute;
+					  top: 0;
+					}
+					
+					/* The dots/bullets/indicators */
+					.dot {
+					  height: 15px;
+					  width: 15px;
+					  margin: 0 2px;
+					  background-color: #bbb;
+					  border-radius: 50%;
+					  display: inline-block;
+					  transition: background-color 0.9s ease;
+					}
+					
+					.active {
+					  background-color: #717171;
+					}
+					
+					/* Fading animation */
+					.fade {
+					  animation-name: fade;
+					  animation-duration: 2.5s;
+					}
+					
+					@keyframes fade {
+					  from {opacity: .4} 
+					  to {opacity: 1}
+					}
+					
+					/* On smaller screens, decrease text size */
+					@media only screen and (max-width: 300px) {
+					  .text {font-size: 11px}
+					}
+					
+					
+					#hb2 {
+					    background-color: red;
+					    padding: 10px 20px 10px 20px;
+					    border: none;
+					    border-radius: 20px;
+						border-color: black;
+					    float: right;
+					    margin-right: 65%;
+					    margin-top: 3%;
+					    color: white;
+					}
+					
+					#hb2:hover {
+						color: black;
+						cursor: pointer;
+					}
+					
+					
+    </style>
+    <link rel="stylesheet" href="css/bookMyShow.css">
+    <title>Book My Show</title>
+</head>
+
+<body>
+    <!----------------------------header-------------------------------------------------------->
+    <header>
+        <div class="header1">
+            <img src="images/bookMyshow-logos.png" id="booklogo1">
+            <input type="search" placeholder="search..." id="search1">
+            <div>
+                <form id="form1">
+                    <select>
+						<option><a href="moviePage.html">Bengaluru</a></option>
+					    <option><a href="moviePage.html">Mysuru</a></option>
+					    <option><a href="moviePage.html">Mumbai</a></option>
+						<option><a href="moviePage.html">Kolkata</a></option>
+	                    <option><a href="moviePage.html">Hyderabad</a></option>
+						<option><a href="moviePage.html">Delhi</a></option>
+                    </select>
+                </form>
+            </div>
+			<form action="/login" method="get">
+            <button id="hb1"><b>Sign in</b></button>
+			</form>
+        </div>
+        <!-----------------------second header-------------------------------------------------------------------->
+        <div id="header2">
+            <div id="disf">
+                <ul id="li1">
+                    <li><a href="moviePage.html">Movies</a></li>
+                    <li><a href="moviePage.htmmoviePage.html">Streem</a></li>
+                    <li><a href="moviePage.htmmoviePage.html">Event</a></li>
+                    <li><a href="moviePage.htmmoviePage.html">Play</a></li>
+                    <li><a href="moviePage.htmmoviePage.html">Sports</a></li>
+                    <li><a href="moviePage.htmmoviePage.html">Active</a></li>
+                    <li><a href="moviePage.htmmoviePage.html">Buzz</a></li>
+
+                </ul>
+                <ul id="li2">
+                    <li><a href="moviePage.html">ListYourShow</a></li>
+                    <li><a href="moviePage.html">Corporates</a></li>
+                    <li><a href="moviePage.html">Offers</a></li>
+                    <li><a href="moviePage.html">Gift Cards</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--------------------------------------Adds Main Content---------------------->
+    <div id="allAds">
+		<div id="add1">
+				<div class="slideshow-container">
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 4</div>
+				  <a href="https://in.bookmyshow.com/offers/kotak-bank-trevor-noah:-off-the-record-tour-offer/KTKTN0723"><img src="images/add1.png" class="img1"></a>
+				  <div class="text"></div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 4</div>
+				 <a href="https://in.bookmyshow.com/events/jo-bolta-hai-wahi-hota-hai-by-harsh-gujral/ET00390203"><img src="images/add3.png" class="img2"></a> 
+				  <div class="text"></div>
+				</div>
+				
+				<div class="mySlides fade">
+			   <div class="numbertext">3 / 4</div>
+			   <a href="https://in.bookmyshow.com/movies/civil-war/ET00387403"><img src="images/ads3.avif"class="img3"></a> 
+				<div class="text"></div>
+				</div>
+							
+			    <div class="mySlides fade">
+			   <div class="numbertext">4 / 4</div>
+			<a href="https://in.bookmyshow.com/movies/madame-web/ET00376328"><img src="images/ads4.avif"class="img4"></a>	
+				<div class="text"></div>
+			  </div>
+				
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					  <span class="dot" onclick="currentSlide(4)"></span>
+		       	</div>
+		
+		       </div>
+		   </div>
+		
+		
+		        <!-- <div id="add2">
+		        </div>
+		
+		        <div id="add3">
+		        </div> -->
+    </div>
+		    </div>
+		    <div>
+        <h2 id="h2r"><b>Recommended Movies</b></h2>
+    </div>
+    <!------------------------------------Recommended Movies dives---------------------->
+    <div id="allrms">
+            <div id="titleCover">
+				<div id="rating1"> 6.2/10             10.4k votes</div>
+                <div id="rm1">
+
+                    <div>
+                        <!----------------rating symbol--------------------------------------------------------->
+                        <div>
+							<img src="images/bro-1.webp" height="100%" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h3>BRO </h3>
+                    <p>Comedy/Drama</p>
+                </div>
+
+    </div>
+
+    <div id="titleCover">
+		<div id="rating1">7.4/10          1.6k votes</div>
+            <div id="rm2">
+                <div>
+					<img src="images/hostel hudugaru bekagiddare.jpg" height="100%" width="100%">
+                </div>
+            </div>
+            <br>
+            <div>
+                <h3>Hostel Hudugaru Bekagiddare </h3>
+                <p>Comedy</p>
+            </div>
+    </div>
+
+    <div id="titleCover">
+		<div id="rating1">8.3/10             7,02,036 votes</div>
+            <div id="rm3">
+                <div>
+					<img src="images/oppenheimer.jpg" height="100%" width="100%">
+                </div>
+            </div>
+            <br>
+            <div>
+                <h3>Oppenheimer </h3>
+                <p>Biography/drama/Historical</p>
+            </div>
+    </div>
+
+    <div id="titleCover">
+		<div id="rating1">8.6/10 · ‎ 67,859 votes</div>
+            <div id="rm4">
+                <div>
+					<img src="images/sita(1).jpg" height="100%" width="100%">
+                </div>
+            </div>
+            <br>
+            <div>
+                <h3>Sita Ramam</h3>
+                <p>Romance/Mystery/Drama</p>
+            </div>
+    </div>
+	
+    <div id="titleCover">
+		<div id="rating1">7.7/10           2,42,573 votes</div>
+            <div id="rm5">
+                <div>
+					<img src="images/mi7.jpg" height="100%" width="100%">
+                </div>
+            </div>
+            <br>
+            <div>
+                <h3>Mission Impossible 7</h3>
+                <p>Action/Adventure/Thriller</p>
+            </div>
+    </div>
+
+    </div>
+    <a href="https://in.bookmyshow.com/explore/c/stream">
+        <div id="streemBar">
+			<img src="images/streamBar.png" height="100%" width="100%" alt="">
+        </div>
+    </a>
+    <!-----------------------English Movies section--------------------->
+    <h2 id="kannada_h2">All English Movies</h2>
+    <div id="AllKannadaMovies">
+        <div id="titleCover">
+			<div id="rating1">8.3/10           7,02,036 votes</div>
+                <div id="kannadMovies1">
+                    <div>
+						<img src="images/oppenheimer.jpg" height="100%" width="100%">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h3>Oppenheimer</h3>
+                    <p>Biography/drama/Historical</p>
+                </div>
+        </div>
+
+        <div id="titleCover">
+			<div id="rating1">6.8/10            5,24,359 votes</div>
+                <div id="kannadMovies2">
+                    <div>
+						<img src="images/barbie.jpg" height="100%" width="100%">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h3>Barbie</h3>
+                    <p>Adventure/Comedy/Fantasy</p>
+                </div>
+        </div>
+
+        <div id="titleCover">
+			<div id="rating1">7.7/10          2,42,573 votes</div>
+                <div id="kannadMovies3">
+                    <div>
+						<img src="images/mi7.jpg" height="100%" width="100%">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h3>Mission Impossible 7</h3>
+                    <p>Action/Crime/Drama</p>
+                </div>
+        </div>
+
+        <div id="titleCover">
+			<div id="rating1">8.6/10 ‎         3,61,837 votes</div>
+                <div id="kannadMovies4">
+                    <div>
+						<img src="images/spider.jpg" height="100%" width="100%">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h3>Spider man across the spider verse</h3>
+                    <p>Action/Adventure/Thriller</p>
+                </div>
+        </div>
+
+        <div id="titleCover">
+			<div id="rating1">7.7/10          3,30,245 votes</div>
+                <div id="kannadMovies5">
+                    <div>
+						<img src="images/jwc4.jpg" height="100%" width="100%">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h3>John Wick 4</h3>
+                    <p>Action/Adventure/Thriller</p>
+                </div>
+        </div>
+
+    </div>
+	
+	<a href="https://in.bookmyshow.com/offers/icici-debit-card-offer/ICICOR0813">
+	        <div id="streemBar">
+				<img src="images/banner2.jpg" height="100%" width="100%" alt="">
+	        </div>
+	    </a>
+	    <!-----------------------Kannada Movies section--------------------->
+	    <h2 id="kannada_h2">All kannada Movies</h2>
+	    <div id="AllKannadaMovies">
+	        <div id="titleCover">
+				<div id="rating1">8.2/10 ‎         1,02,580 votes</div>
+	                <div id="kannadMovies1">
+	                    <div>
+							<img src="images/kantara(1).jpg" height="100%" width="100%">
+	                    </div>
+	                </div>
+	                <br>
+	                <div>
+	                    <h3>Kantara </h3>
+	                    <p>Action/Thriller</p>
+	                </div>
+	        </div>
+	
+	        <div id="titleCover">
+				<div id="rating1">7.7/10      8.1k votes</div>
+	                <div id="kannadMovies2">
+	                    <div>
+							<img src="images/avane sri(1).jpg" height="100%" width="100%">
+	                    </div>
+	                </div>
+	                <br>
+	                <div>
+	                    <h3>Avane Srimannarayana</h3>
+	                    <p>Action/ Comedy/Adventure</p>
+	                </div>
+	        </div>
+	
+	        <div id="titleCover">
+					<div id="rating1">8.3/10   ·      1,49,783 votes</div>
+	                <div id="kannadMovies3">
+	                    <div>
+							<img src="images/kgf2(1).jpg" height="100%" width="100%">
+	                    </div>
+	                </div>
+	                <br>
+	                <div>
+	                    <h3>K.G.F 2</h3>
+	                    <p>Action/Crime/Drama</p>
+	                </div>
+	        </div>
+	
+	        <div id="titleCover">
+					<div id="rating1">7.4/10       1.5k votes</div>
+	                <div id="kannadMovies4">
+	                    <div>
+							<img src="images/hostel hudugaru bekagiddare.jpg" height="100%" width="100%">
+	                    </div>
+	                </div>
+	                <br>
+	                <div>
+	                    <h3>Hostel Hudugaru Bekagiddare </h3>
+	                    <p>Comedy</p>
+	                </div>
+	        </div>
+	
+	        <div id="titleCover">
+					<div id="rating1"> 8.3/10       7K Votes</div>
+	                <div id="kannadMovies5">
+	                    <div>
+							<img src="images/sapta(1).jpg" height="100%" width="100%">
+	                    </div>
+	                </div>
+	                <br>
+	                <div>
+	                    <h3>Sapta Sagaradaache Yello</h3>
+	                    <p>Romance/Drama</p>
+	                </div>
+	        </div>
+	
+	    </div>
+	
+    <!-----------------------Blockbuster 100 Days Movies-------------------------------------->
+    <div id="All100DaysMoviesCover">
+        <h2 id="All100DaysMovies_h2">Blockbuster Movies Of The Year</h2>
+        <div id="All100DaysMovies">
+            <div id="titleCover">
+					<div id="rating1">7.9/10         3,76,872 votes</div>
+                    <div id="k100movies1">
+                        <div>
+							<img src="images/gotg3.jpg" height="100%" width="100%">
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="margin-top: -6%;">Guardians Of The Galaxy 3</h3>
+                        <p>Action/Adventure/Fantasy</p>
+                    </div>
+            </div>
+
+            <div id="titleCover">
+					<div id="rating1"> 7/10         95K Votes</div>
+                    <div id="k100movies2">
+                        <div>
+							<img src="images/Jawan.jpg" height="100%" width="100%">
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="margin-top: -6%;">Jawan</h3>
+                        <p>Action/Drama/Comedy</p>
+                    </div>
+            </div>
+
+            <div id="titleCover">
+					<div id="rating1">7.7/10         3,30,245 votes</div>
+                    <div id="k100movies3">
+                        <div>
+							<img src="images/jwc4.jpg" height="100%" width="100%">
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="margin-top: -6%;">John Wick 4</h3>
+                        <p>Action/Adventure/Thriller</p>
+                    </div>
+            </div>
+
+            <div id="titleCover">
+					<div id="rating1">8.2/10 ‎      1,02,580 votes</div>
+                    <div id="k100movies4">
+                        <div>
+							<img src="images/kantara(1).jpg" height="100%" width="100%">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: -6%;">
+                        <h3>Kantara</h3>
+                        <p>Action/Thriller</p>
+                    </div>
+            </div>
+
+
+        </div>
+    </div>
+	
+	<div>
+		<form action="/movies" method="get">
+		            <button id="hb2"><b>COMMING SOON/UPCOMMING MOVIES ></b></button>
+					</form>
+		
+	</div>
+	<br>
+	<br>
+
+    <!-----------------------------------------Footer section------------------------------------>
+    <footer>
+        <div id="footerColor">
+            <h4 id="Footersection_h1"><b>For all the shows available</b><br> Get a show,event,activity or a grate experience? partner with us
+                & ger listed on <span id="Footersection_span">BookMyShow</span><br><br><a href="https://in.bookmyshow.com/contactus"><button id="contactTodayBUtton">Contact
+                    today!</button></a></h4>
+					<br>
+            <div id="footerColot2">
+                <div id="footerIcons">
+                    <div>
+                        <img src="images/support.png" style=" height: 100px;width: 100px;">
+                        <p>24/7 Customer Care</p>
+                    </div>
+                    <div>
+                        <img src="images/movie-ticket.png" style=" height: 100px;width: 100px;">
+                        <p>Resend Booking Confirmation</p>
+                    </div>
+                    <div>
+                        <img src="images/mail.png" style=" height: 100px;width: 100px;">
+                        <p>Subscribe To The Newsletter</p>
+                    </div>
+                </div>
+            </div>
+            <p style="margin-left: 8.5%; margin-top: 2%; margin-right: 8.5%; color: aliceblue;">
+                <span> MOVIES NOW SHOWING IN BENGALURU</span><br><br>
+
+				BRO Rocky Aur Rani Kil Prem Kahaani Oppenheimer Hostel Hudugar Belagiddare Barbie Kausalya Supraja Rame
+				                |007 Returns Mission Impossible: Dead Reckoning Part One Baby (2023) Aachar & Co<br><br>
+				
+				                UPCOMING MOVIES IN BENGALURU<br><br>
+				
+				                Invite Teenage Mutant Ninja Turtles: Mutant Mayhem Miss Shetty Me Polishetty | Purple Poppins | Nilla
+				                Rent (Not For Sale) Saandrithazh Web Talic To Me (2023) The Childe | Maharshi| Detective Conan The Story
+				                Of A Haibara Black Iron Mystery Train | Krishna Gadu Ante Oka Range | Rajugar Kodipulao Sasu Maa Olum |
+				                Parich Kriti Five Elements Pable Jatiche Hebbuli (Telugu)<br><br>
+				
+				                MOVIES BY GENRE<br><br>
+				
+				                Drama Movies Comedy Movies Thriller Movies | Romantic Movies | Adventure Movies Action Movies Crime
+				                Movies Horror Movies | Fantasy Movies Animation Movies Mystery Movies Sci-Fi Movies Adaptation Movies
+				                Devotional Movies Mythological Movies Hair Political Movies Supernatural Movies Sports Movies Hest
+				                Movies Suspenot Movies Historical Movies | Tragedy Movies Anime Movien Psychological Movies Biography
+				                Movies War Movies | Period Movies | Classic Movies Musical Movies Adult Movies Screening Movies
+				                Bollywood Movies<br><br>
+				
+				                MOVIES BY LANGUAGE<br><br>
+				
+				                Movies in English Movies in Karadies in Tamil Movies in Telugu Movies in Hindi | Movies in English 70
+				                Movies in Japanese Movies in Chattgartu Movies in Khasi | Movies in Nepall Movies in Portuguese Movies
+				                is French Movies in Tulu Montes in Assamese Movies in Haryanavi Movies in Sindhi Movies in Odia Movies
+				                in Rajasthani Movies in Marathi Movies in Bengali Movies in Punjabi Movies In Urdu Movies in Bhojpuri
+				                Movies in Gujarati Movies in Malayalam Movies in Konkani<br><br>
+				
+				                PLAYS BY GENRE IN BENGALURU<br><br>
+				
+				                Drama Plays | Comedy Flags Musical Plays | Contemporary Plays | Classic Plays Historical Plays Horror
+				                Plays Romantic Plays War Plays Period Plays Sci-Fi Plays Biography Plays | Adult Plays | Action Plays |
+				                Adaptation Plays Mythological Plays Noir Plays | Online Streaming Plays Plays Political Plays | Tribute
+				                Plays | Suspense Plays | Tragedy Plays | Psychological Plays | Mystery Plays | Broadway Plays |
+				                Adventure Plays | Fantasy Plays | Thriller Plays Regional Plays<br><br>
+				
+				                MOVIE REVIEWS AND TRENDING ARTICLES<br><br>
+				
+				                Trending Articles | Latest News on Movies, Events, Plays and Sports Movie Celebrities<br><br>
+				
+				                MOVIE UPDATES AND CELEBRITIES<br><br>
+				
+				                Upcoming Movies Now Showing of Movie Celebrities<br><br>
+				
+				                THINGS TO DO IN BENGALURU<br><br>
+				
+				                SPORTS EVENTS IN BENGALURU<br><br>
+				
+				                Online Games Chess | Sports | Amietice Archery Baseball | Badminton Cycling Golf | Kickboxing Boat Race
+				                Boxing Card Games Cricket Derby Horse Race Football Kabaddi Mixed Martial Arts Online Sports May Th
+				                Swimming Pool Rugby Hockey | the Skating | Judo Triathlon Motorsports Walking | Shooting Running Tennis
+				                | Wrestling Salling Snooker Basketball Bowling Polo Volleyball | Table Tennis Weight Lifting<br><br>
+				
+				                EVENTS IN BENGALURU<br><br>
+				
+				                Comedy Shows Workshops Munchers maps ads | Screening Beer Festival Conferences | Exhibitions | Celebrity
+				                Wishes | Award shows | Sprituality | Online Streaming Events Vaccination | Talks Nine Year
+				                Parties<br><br>
+				
+				                CINEMAS IN TOP CITIES<br><br>
+				
+				                Cinemas in Mumbai | Cinemas in kolkata | Cinemas in Chennai | Cinemas in Bengaluru | Cinemas in Hyderabad |Cinemas in Mysuru<br><br>
+				
+				                EVENTS IN TOP CITIES<br><br>
+				
+				                Events in Mumbai | Events in Mysuru | Events in Chennai | Events in Bengaluru | Events in Hyderabad
+				                 | Events in Kolkata <br><br>
+				
+				                PLAYS IN TOP CITIES<br><br>
+				
+				                Plays in Mumbai | Plays in Chennai | Plays in Bengaluru | Plays in Hyderabad | Plays in Mysuru | Plays in Kolkata <br><br>
+				
+				                ACTIVITIES IN TOP CITIES<br><br>
+				
+				                Things to do in Mumbai | Things to do in Chennal | Things to do in Bengaluru |
+				                Things to do in Hyderabad | Things to do in Kolkata | Things to do in Mysuru<br><br>
+				
+				                MOVIES IN TOP CITIES<br><br>
+				
+				                Movies in Mumbai | Movies in Chennai | Movies in Bengaluru |Movies in Hyderabad | Movies in
+				                kolkata | Movies in Mysuru<br><br>
+				
+				                COUNTRIES<br><br>
+				
+				                Indonesia Singapore | UAE | Set Lara West Indies<br><br>
+				
+				                HELP<br><br>
+				
+				                About Us | Contact Us | Current Opening Press Release Press Coverage Stemap FAQ Terms and
+				                Conditions Privacy Policy<br><br>
+            </p>
+            <hr style="color: white;">
+            <p>
+
+            </p>
+        </div>
+    </footer>
+	
+	
+
+	<script src="js/index.js"></script>
+</body>
+
+</html>

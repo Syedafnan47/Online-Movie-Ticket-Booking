@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/moviePage.css">
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 30px;
+            margin-left: 5%;
+            padding: 30px;
+            background-color: rgb(12, 12, 12);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .movies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0px;
+        }
+
+        .movie {
+            width: calc(33.33% - 20px);
+            margin: 5px;
+            padding: 10px;
+            background-color: rgb(12, 12, 12);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            position: relative; /* Added */
+        }
+
+        .movie:hover {
+            transform: translateY(-5px);
+        }
+
+        .movie img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background-color: red;
+        }
+
+        h2,
+        p {
+            margin: 0;
+            color: aliceblue;
+        }
+
+        .movie-details {
+            position: relative;
+        }
+
+		.like-dislike {
+		    position: absolute;
+		    top: 10px;
+		    right: -78px; /* Adjusted value to move the buttons further to the right */
+		    display: flex;
+		    align-items: center;
+		}
+
+
+        .like-dislike button {
+            padding: 0;
+            margin-right: 10px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .like-dislike button img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            filter: grayscale(100%) brightness(80%);
+            transition: filter 0.3s ease;
+        }
+
+        .like-dislike button.like.clicked img {
+            filter: grayscale(0%) brightness(100%);
+        }
+
+        .like-dislike button.dislike.clicked img {
+            filter: grayscale(0%) brightness(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="images/bookMyshow-logos.png" id="img1">
+
+    </div>
+
+    <h1 style="color: rgb(182, 187, 190); font-size: 50px; padding-left:10%;">Coming Soon....</h1>
+
+    <div class="container">
+        <div class="movies">
+            <div class="movie">
+                <img src="images/furiosa.jpg" height="100%" width="100%">
+                <div class="movie-details">
+                    <h2>Furiosa</h2>
+                    <p>Release Date: May 23, 2024</p>
+                    <div class="like-dislike">
+                        <button class="like" onclick="toggleLike(this)"><img src="images/lik.png" alt="Like"></button>
+                        <button class="dislike" onclick="toggleDislike(this)"><img src="images/dis.png" alt="Dislike"></button>
+                    </div>
+                </div>
+            </div>
+			<div class="movie">
+									<img src="images/ex.jpg" height="100%" width="100%">
+					                <div class="movie-details">
+					                    <h2>The Exorcism</h2>
+					                    <p>Release Date: June 21, 2024</p>
+										<div class="like-dislike">
+										                        <button class="like" onclick="toggleLike(this)"><img src="images/lik.png" alt="Like"></button>
+										                        <button class="dislike" onclick="toggleDislike(this)"><img src="images/dis.png" alt="Dislike"></button>
+										                    </div>
+					                </div>
+					            </div>
+					            <div class="movie">
+									<img src="images/kal.jpg" height="100%" width="100%">
+					                <div class="movie-details">
+					                    <h2>Kalki</h2>
+					                    <p>Release Date: June 27, 2024</p>
+										<div class="like-dislike">
+										                        <button class="like" onclick="toggleLike(this)"><img src="images/lik.png" alt="Like"></button>
+										                        <button class="dislike" onclick="toggleDislike(this)"><img src="images/dis.png" alt="Dislike"></button>
+										                    </div>
+					                </div>
+					            </div>
+								<div class="movie">
+											<img src="images/p2.jpg" height="100%" width="100%">
+									       <div class="movie-details">
+									       <h2>Pushpa 2</h2>
+									         <p>Release Date: August 15, 2024</p>
+											 <div class="like-dislike">
+											                         <button class="like" onclick="toggleLike(this)"><img src="images/lik.png" alt="Like"></button>
+											                         <button class="dislike" onclick="toggleDislike(this)"><img src="images/dis.png" alt="Dislike"></button>
+											                     </div>
+								          </div>
+								 </div>
+								 <div class="movie">
+							   	<img src="images/io2.jpg" height="100%" width="100%">
+								   <div class="movie-details">
+								    <h2>Inside Out 2</h2>
+								    <p>Release Date: June 14, 2024</p>
+								    <div class="like-dislike">
+							     <button class="like" onclick="toggleLike(this)"><img src="images/lik.png" alt="Like"></button>
+							    <button class="dislike" onclick="toggleDislike(this)"><img src="images/dis.png" alt="Dislike"></button>
+								 </div>
+							    </div>
+				                </div>
+								
+							    <div class="movie">
+									<img src="images/wol2.jpg" height="100%" width="100%">
+										 <div class="movie-details">
+										 <h2>Deadpool & Wolverine</h2>
+									  <p>Release Date: July 26, 2024</p>
+									  <div class="like-dislike">
+									                          <button class="like" onclick="toggleLike(this)"><img src="images/lik.png" alt="Like"></button>
+									                          <button class="dislike" onclick="toggleDislike(this)"><img src="images/dis.png" alt="Dislike"></button>
+									                      </div>
+									 </div>
+							  </div>
+							  <div class="movie">
+							 	<img src="images/crow.jpg" height="100%" width="100%">
+							    <div class="movie-details">
+							  	  <h2>The Crow</h2>
+							   <p>Release Date: August 23, 2024</p>
+							   <div class="like-dislike">
+		                        <button class="like" onclick="toggleLike(this)"><img src="images/lik.png" alt="Like"></button>
+		                       <button class="dislike" onclick="toggleDislike(this)"><img src="images/dis.png" alt="Dislike"></button>
+		                       </div>
+							  </div>
+				          </div>
+							<div class="movie">
+							    <img src="images/kraven.jpg" height="100%" width="100%">
+								<div class="movie-details">
+								<h2>Kraven The Hunter</h2>
+								 <p>Release Date: December 15, 2024</p>
+								 <div class="like-dislike">
+								                         <button class="like" onclick="toggleLike(this)"><img src="images/lik.png" alt="Like"></button>
+								                         <button class="dislike" onclick="toggleDislike(this)"><img src="images/dis.png" alt="Dislike"></button>
+								                     </div>
+								 </div>
+							</div>
+								
+					        </div>
+					    </div>
+						<script>
+							function toggleLike(button) {
+							    button.classList.toggle("clicked");
+							    const dislikeButton = button.parentElement.querySelector(".dislike");
+							    if (button.classList.contains("clicked")) {
+							        dislikeButton.classList.remove("clicked");
+							    }
+							}
+							
+							function toggleDislike(button) {
+							    button.classList.toggle("clicked");
+							    const likeButton = button.parentElement.querySelector(".like");
+							    if (button.classList.contains("clicked")) {
+							        likeButton.classList.remove("clicked");
+							    }
+							}
+						</script>
+   </body>
+</html>
